@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage(building with maven) {
+        stage('building with maven') {
             steps {
                 sh'''
                   mvn clean package -DskipTests
